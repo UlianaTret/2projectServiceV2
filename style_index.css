@@ -257,7 +257,7 @@ nav input {
         right: 0%;
         top: 0%;
         bottom: 85.26%;
-        width: auto;
+        width: 105vw; /*auto;*/
         border-radius: 0px;
         background: #FFFFFF;
         display: flex;
@@ -269,7 +269,7 @@ nav input {
         display: flex;
         flex-direction: row;
         left: 10px;
-        width: 33%;
+        width: 25%;
     }
 
     .logo {
@@ -398,7 +398,7 @@ nav input {
         right: 0%;
         top: 0%;
         bottom: 85.26%;
-        width: auto;
+        width: 105vw; /*auto;*/
         border-radius: 0px;
         background: #FFFFFF;
         display: flex;
@@ -410,7 +410,7 @@ nav input {
         display: flex;
         flex-direction: row;
         left: 10px;
-        width: 33%;
+        width: 25%;
     }
 
     .logo {
@@ -421,14 +421,14 @@ nav input {
     }
 
     .medium-menu {
-        width: 33%;
+        width: 30%;
     }
 
     .right-menu {
         left: 10%;
         right: 70%;
-        width: 33%;
-        padding: 18px;
+        width: 27%;
+        padding: 18px 0px;
         display: flex;
         flex-direction: row;
     }
@@ -629,7 +629,7 @@ nav input {
     }
 
     .slide-menu {
-        width: 65vw;
+        width: 80vw;
         height: 100px;
         left: 16px;
         display: flex;
