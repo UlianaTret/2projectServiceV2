@@ -286,7 +286,6 @@ nav input {
     .right-menu {
         left: 10%;
         right: 70%;
-        /*top: -50px;*/
         width: 33%;
         padding: 18px;
         display: flex;
@@ -321,6 +320,7 @@ nav input {
         display: flex;
         flex-direction: row;
         overflow: hidden;
+        overflow-x: auto;
         margin: 3%;
         height: 40px;
     }
@@ -336,6 +336,10 @@ nav input {
         background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); /*F8F8F8*/
         height: 70px;
         z-index: 100;
+    }
+
+    .slide-menu::-webkit-scrollbar {
+        display: none;
     }
 
     .block-info {
@@ -461,6 +465,7 @@ nav input {
         display: flex;
         flex-direction: row;
         overflow: hidden;
+        overflow-x: auto;
         margin: 3%;
         height: 40px;
     }
@@ -527,13 +532,15 @@ nav input {
 
 @media screen and (min-width: 1120px) {
     /* Стили для ПК */
+    html {
+        /*padding: 0 20% 0 20%; */
+        padding: 0 20vw 0 20vw;
+    }
+
     .menu, .slide-menu__opacity, .menu__shadow {
         display: none;
     }
 
-    /*html{*/
-    /*    margin: 0% 20% 0% 20%;*/
-    /*}*/
     .title_copy {
         margin: 30px 0px 0px;
 
@@ -557,8 +564,6 @@ nav input {
     }
 
     .menu-mini {
-        /*left: 70%;*/
-        /*right: 10%;*/
         width: 36%;
         padding: 18px;
         display: flex;
@@ -566,7 +571,6 @@ nav input {
     }
 
     .menu-mini__button-repair {
-        /*padding: 8px;*/
         width: 200px;
         font-family: 'TT Lakes';
         font-size: 16px;
@@ -577,7 +581,6 @@ nav input {
     }
 
     .menu-mini__button-status-repair {
-        /*padding: 8px;*/
         width: 200px;
         font-family: 'TT Lakes';
         font-size: 16px;
@@ -618,8 +621,6 @@ nav input {
         height: 40px;
         width: 288px;
         left: 16px;
-        /*top: 8px;*/
-        /*font-family: 'TT Lakes Bold';*/
         font-weight: bold;
         font-size: 28px;
         line-height: 40px;
@@ -628,15 +629,17 @@ nav input {
     }
 
     .slide-menu {
-        margin: 1%;
-        overflow: unset;
+        width: 65vw;
+        height: 100px;
+        left: 16px;
         display: flex;
+        flex-wrap: wrap;
         flex-flow: row wrap;
     }
 
     .block-info {
         position: absolute;
-        top: 200px;
+        top: 250px;
         height: auto;
         display: flex;
         flex-direction: row;
