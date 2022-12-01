@@ -186,6 +186,13 @@ nav input {
     display: none;
 }
 
+.slide-menu {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; /*Скрывает скролл в Firefox*/
+}
+
+
 .slide-menu__item1 {
     background: #FFFFFF;
     border: 2px solid #B8FFEC;
@@ -258,6 +265,7 @@ nav input {
         top: 0%;
         bottom: 85.26%;
         width: 105vw; /*auto;*/
+        height: 88px;
         border-radius: 0px;
         background: #FFFFFF;
         display: flex;
@@ -329,7 +337,7 @@ nav input {
         position: fixed;
         left: 94.54%;
         right: 0;
-        top: 27%;
+        top: 15%;
         bottom: 63.82%;
         order: 999;
         margin-left: auto;
@@ -474,7 +482,7 @@ nav input {
         position: fixed;
         left: 94.54%;
         right: 0;
-        top: 28%;
+        top: 17%;
         bottom: 63.82%;
         order: 999;
         margin-left: auto;
