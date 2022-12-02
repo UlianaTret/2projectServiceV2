@@ -4,11 +4,14 @@
 }
 
 html {
-    width: 100vw;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
     min-width: 320px;
     background: #F8F8F8;
-    font-family: 'TT Lakes';
-    font-weight: 300;
+    font-family: 'TT Lakes', serif;
+    font-width: 300;
     font-color: black;
     background: #F8F8F8;
 }
@@ -27,6 +30,7 @@ li {
 .button {
     border-color: rgba(0, 0, 0, 0);
     background: rgba(0, 0, 0, 0);
+    font-family: 'TT Lakes', serif;
 }
 
 a, input, button:hover {
@@ -34,7 +38,27 @@ a, input, button:hover {
 }
 
 input {
-    font-family: 'TT Lakes';
+    font-family: 'TT Lakes', serif;
+}
+
+.menu {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 85.26%;
+    width: 100%;
+    border-radius: 0;
+    background: #FFFFFF;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #41F6D7;
+}
+
+.call, .chat, .profile, .menu-mini {
+    display: none;
 }
 
 .left-menu {
@@ -47,23 +71,12 @@ input {
     flex-direction: row;
 }
 
-.menu__shadow {
-    left: 0%;
-    right: 0%;
-    bottom: 85.26%;
-    height: 1px;
-    width: 100%;
-    top: 87px;
-    border-radius: 0px;
-    background: #D9FFF5;
-}
-
 .logo {
-    left: 22.73%;
+    /*left: 22.73%;
     right: 47.1%;
     top: 18.59px;
     bottom: 88.37%;
-    padding: 0px 15px;
+    padding: 0 15px;*/
     background: rgba(100%, 100%, 100%, 0);
     border: rgba(100%, 100%, 100%, 0);
 }
@@ -76,15 +89,6 @@ input {
     width: 33%;
     display: flex;
     flex-direction: row;
-}
-
-.divider {
-    left: 58.12%;
-    right: 41.25%;
-    top: 28px;
-    bottom: 89.95%;
-    background: #EAEAEA;
-    border-radius: 1px;
 }
 
 .icon-repair__background {
@@ -108,9 +112,9 @@ input {
 }
 
 .background-page {
-    width: 100vw;
+    width: 100%;
     height: 509px;
-    left: 0px;
+    left: 0;
     top: 88px;
     background: #F8F8F8;
     display: flex;
@@ -121,10 +125,17 @@ input {
     display: flex;
 }
 
+    .title_copy {
+        margin: 30px 0 0;
+        display: flex;
+        flex-direction: row;
+        border-left: 3px solid #41F6D7;
+    }
+
 .title__copy-fill {
     height: 40px;
     width: 4px;
-    left: 0px;
+    left: 0;
     background: #41F6D7;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     border-top-left-radius: 4px;
@@ -141,6 +152,7 @@ input {
     line-height: 40px;
     letter-spacing: -0.6px;
     color: #1B1C21;
+    margin: 0 0 0 10px;
 }
 
 nav input {
@@ -150,7 +162,7 @@ nav input {
     border: 2px solid rgba(0, 0, 0, 0);
     height: 40px;
     border-radius: 6px;
-    margin: 0px 5px;
+    margin: 0 5px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -160,38 +172,38 @@ nav input {
 }
 
 
+
+
+
+
 .slide-menu {
-    width: 95vw;
+    width: auto;
     height: 40px;
-    left: 16px;
+
     display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
+    flex-direction: row;
+    overflow-y: auto;
+
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; /*Скрывает скролл в Firefox*/
 }
 
 .slide-menu__opacity {
     position: fixed;
     left: 94.54%;
     right: 0;
-    top: 20.5%;
+    top: 120px;
     bottom: 63.82%;
     order: 999;
-    margin-left: auto;
-    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); /*F8F8F8*/
-    height: 50px;
+    background: linear-gradient(270deg, red 16.84%, rgba(248, 248, 248, 0.0001) 100%); /*F8F8F8*/
+    height: 70px;
     z-index: 100;
 }
 
 .slide-menu::-webkit-scrollbar {
     display: none;
 }
-
-.slide-menu {
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none; /*Скрывает скролл в Firefox*/
-}
-
 
 .slide-menu__item1 {
     background: #FFFFFF;
@@ -206,39 +218,48 @@ nav input {
     cursor: pointer;
 }
 
+    .block-info {
+
+        display: flex;
+        flex-direction: column;
+    }
+
 .block1 {
-    width: 100vw;
-    left: 0px;
-    top: 240px;
+    width: auto;
     display: flex;
     flex-direction: column;
 }
 
-.block1__infoCPS {
-    top: 180px;
-    width: 45%;
-    height: 90px;
+
+
+
+/*.block1__infoCPS {
     font-size: 14px;
     line-height: 18px;
     text-align: left;
     letter-spacing: 0.2px;
     color: #1B1C21;
     overflow: hidden;
-}
+}*/
 
-.link {
-    display: flex;
-    flex-direction: row;
-}
+    /*.block1__infoCPS {
+        width: auto;
+        left: 24px;
+        font-width: 500;
+        overflow: hidden;
+    }*/
 
-.link__icon-read-further {
+
+
+
+.read-more__icon {
     height: 10px;
     width: 7px;
     left: 24px;
     top: 127px;
 }
 
-.link__read-more {
+.read-more {
     height: 24px;
     width: 100px;
     left: 48px;
@@ -250,168 +271,32 @@ nav input {
     white-space: nowrap;
 }
 
-.block-info__background-img {
-    height: 176px;
-    width: 45%;
-    left: 0px;
-    top: 160px;
-}
-
-
-@media (min-width: 1px) {
-    .menu {
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 85.26%;
-        width: 105vw; /*auto;*/
-        height: 88px;
-        border-radius: 0px;
-        background: #FFFFFF;
-        display: flex;
-        flex-direction: row;
+.block-img__img {
+    margin: 30px 0;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 2px solid red;
     }
 
-    .left-menu {
-        padding: 18px;
-        display: flex;
-        flex-direction: row;
-        left: 10px;
-        width: 25%;
-    }
 
-    .logo {
-        top: 20%;
-        bottom: 86.23%;
-        background: rgba(100%, 100%, 100%, 0);
-        border: rgba(100%, 100%, 100%, 0);
-    }
 
-    .medium-menu {
-        width: 33%;
-    }
 
-    .right-menu {
-        left: 10%;
-        right: 70%;
-        width: 33%;
-        padding: 18px;
-        display: flex;
-        flex-direction: row;
-    }
 
-    .divider2 {
-        width: 2px;
-        left: 79.85%;
-        right: 17.86%;
-        top: 28px;
-        bottom: 88.1%;
-        background: #EAEAEA;
-        border-radius: 1px;
-    }
 
-    .call, .chat, .profile, .divider1, .menu-mini {
-        display: none;
-    }
 
-    .title_copy {
-        margin: 10px 0px 0px;
-        display: flex;
-        flex-direction: row;
-    }
 
-    .title__copy-text {
-        margin: 0px 0px 0px 10px;
-    }
 
-    .slide-menu {
-        display: flex;
-        flex-direction: row;
-        overflow: hidden;
-        overflow-x: auto;
-        margin: 3%;
-        height: 40px;
-    }
 
-    .slide-menu__opacity {
-        position: fixed;
-        left: 94.54%;
-        right: 0;
-        top: 15%;
-        bottom: 63.82%;
-        order: 999;
-        margin-left: auto;
-        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); /*F8F8F8*/
-        height: 70px;
-        z-index: 100;
-    }
 
-    .slide-menu::-webkit-scrollbar {
-        display: none;
-    }
 
-    .block-info {
-        position: absolute;
-        top: 200px;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
 
-    .block1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .block1__infoCPS {
-        margin: 5% 5%;
-        width: auto;
-        height: 145px;
-        left: 24px;
-        font-width: 500;
-        overflow: hidden;
-    }
-
-    .read-more__button {
-        border-color: rgba(150, 150, 150, 0);
-        background: rgba(0, 0, 0, 0);
-        margin-left: 5%;
-        width: 150px;
-        font-family: 'TT Lakes';
-    }
-
-    .block-img__img {
-        left: 400px;
-        right: 5.1%;
-        margin: 30px 10px;
-        bottom: 2.85%;
-        width: 100%;
-        height: auto;
-        border-radius: 6px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1119px) {
-    /* Стили для планшетов*/
+ /* Стили для планшетов*/
     .link-repair, .link-status-repair {
         display: none;
     }
 
-    .divider2, .call, .chat, .profile {
-        display: unset;
-    }
 
-    .menu {
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 85.26%;
-        width: 105vw; /*auto;*/
-        border-radius: 0px;
-        background: #FFFFFF;
-        display: flex;
-        flex-direction: row;
-    }
 
     .left-menu {
         padding: 18px;
@@ -421,34 +306,10 @@ nav input {
         width: 25%;
     }
 
-    .logo {
-        top: 20%;
-        bottom: 86.23%;
-        background: rgba(100%, 100%, 100%, 0);
-        border: rgba(100%, 100%, 100%, 0);
-    }
-
-    .medium-menu {
-        width: 30%;
-    }
-
     .right-menu {
-        left: 10%;
-        right: 70%;
-        width: 27%;
-        padding: 18px 0px;
+        padding: 18px 0;
         display: flex;
         flex-direction: row;
-    }
-
-    .divider2 {
-        width: 2px;
-        left: 79.85%;
-        right: 17.86%;
-        top: 28px;
-        bottom: 88.1%;
-        background: #EAEAEA;
-        border-radius: 1px;
     }
 
     .slide-menu__item:hover {
@@ -460,57 +321,53 @@ nav input {
 
 
     .title_copy {
-        margin: 10px 0px 0px;
+        margin: 10px 0 0;
         display: flex;
         flex-direction: row;
     }
 
     .title__copy-text {
-        margin: 0px 0px 0px 10px;
+        margin: 0 0 0 10px;
     }
 
     .slide-menu {
-        display: flex;
-        flex-direction: row;
-        overflow: hidden;
-        overflow-x: auto;
-        margin: 3%;
+        /*display: flex;
+        flex-direction: row;*/
+        /*overflow: hidden;*/
+        /*overflow-x: auto;
+        margin: 7px;
         height: 40px;
+        width: auto;*/
     }
 
     .slide-menu__opacity {
         position: fixed;
-        left: 94.54%;
-        right: 0;
-        top: 17%;
-        bottom: 63.82%;
-        order: 999;
-        margin-left: auto;
-        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); /*F8F8F8*/
+        top: 23%;
+        /*order: 999;*/
+        background: linear-gradient(270deg, red 16.84%, rgba(248, 248, 248, 0.0001) 100%); /*F8F8F8*/
         height: 70px;
-        z-index: 100;
+    }
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .call, .chat, .profile {
+        display: unset;
     }
 
     .block-info {
-        position: absolute;
-        top: 250px;
         height: auto;
         display: flex;
         flex-direction: row;
     }
 
     .block1 {
-        width: 50%;
         display: flex;
         flex-direction: column;
     }
 
     .block1__infoCPS {
-        margin: 5% 5%;
-        width: auto;
-        /*width: 50%;*/
-        height: 145px;
-        left: 24px;
         font-width: 500;
         overflow: hidden;
     }
@@ -518,13 +375,9 @@ nav input {
     .read-more__button {
         border-color: rgba(150, 150, 150, 0);
         background: rgba(0, 0, 0, 0);
-        margin-left: 5%;
+        margin-left: 10px;
         width: 150px;
-        font-family: 'TT Lakes';
-    }
-
-    .block-img {
-        width: 50%;
+        font-family: 'TT Lakes', serif;
     }
 
     .block-img__img {
@@ -540,39 +393,28 @@ nav input {
 
 @media screen and (min-width: 1120px) {
     /* Стили для ПК */
-    html {
-        /*padding: 0 20% 0 20%; */
-        padding: 0 20vw 0 20vw;
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
-    .menu, .slide-menu__opacity, .menu__shadow {
+    .menu, .slide-menu__opacity, {
         display: none;
     }
 
     .title_copy {
-        margin: 30px 0px 0px;
-
         display: flex;
         flex-direction: row;
-    }
-
-    .title__copy-fill {
-        margin: 15px;
+        justify-content: space-between;
     }
 
     .title__copy-text {
-        width: 30%;
-        margin: 0px 0px 0px 10px;
-        padding: 15px;
-    }
-
-    .medium-menu {
-        height: 15px;
-        width: 30%;
+        margin: 15px 0 0 10px;
     }
 
     .menu-mini {
-        width: 36%;
         padding: 18px;
         display: flex;
         flex-direction: row;
@@ -580,7 +422,7 @@ nav input {
 
     .menu-mini__button-repair {
         width: 200px;
-        font-family: 'TT Lakes';
+        font-family: 'TT Lakes', serif;
         font-size: 16px;
         line-height: 24px;
         display: flex;
@@ -590,7 +432,7 @@ nav input {
 
     .menu-mini__button-status-repair {
         width: 200px;
-        font-family: 'TT Lakes';
+        font-family: 'TT Lakes', serif;
         font-size: 16px;
         line-height: 24px;
         display: flex;
@@ -600,8 +442,6 @@ nav input {
 
     .background-page {
         height: 509px;
-        left: 0px;
-        top: 0px;
         display: flex;
         flex-direction: column;
     }
@@ -618,8 +458,6 @@ nav input {
     .title__copy-fill {
         height: 40px;
         width: 4px;
-        left: 0px;
-        top: 24px;
         background: #41F6D7;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
@@ -637,7 +475,7 @@ nav input {
     }
 
     .slide-menu {
-        width: 80vw;
+        width: 1120px;
         height: 100px;
         left: 16px;
         display: flex;
@@ -646,7 +484,6 @@ nav input {
     }
 
     .block-info {
-        position: absolute;
         top: 250px;
         height: auto;
         display: flex;
@@ -654,17 +491,13 @@ nav input {
     }
 
     .block1 {
-        width: 50%;
         display: flex;
         flex-direction: column;
     }
 
     .block1__infoCPS {
-        margin: 5% 5%;
         width: auto;
-        /*width: 50%;*/
         height: 145px;
-        left: 24px;
         font-width: 500;
         overflow: hidden;
     }
@@ -672,22 +505,14 @@ nav input {
     .read-more__button {
         border-color: rgba(150, 150, 150, 0);
         background: rgba(0, 0, 0, 0);
-        margin-left: 5%;
         width: 150px;
-        font-family: 'TT Lakes';
-    }
-
-    .block-img {
-        width: 50%;
+        font-family: 'TT Lakes', serif;
     }
 
     .block-img__img {
-        left: 400px;
-        right: 5.1%;
-        margin: 30px 10px;
-        padding: 0px 30px;
-        bottom: 2.85%;
-        width: auto; /*100%;*/
+        /*margin: 30px 10px;*/
+        /*padding: 0 30px;*/
+        width: auto;
         height: auto;
         border-radius: 6px;
     }
