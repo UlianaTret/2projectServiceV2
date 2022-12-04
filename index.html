@@ -8,98 +8,100 @@
     <link href="./font/stylesheet.css" rel="stylesheet">
 </head>
 <body>
-<ul class="menu">
-    <div class="left-menu">
-        <li class="menu-icon">
-            <button type="button" class="menu-icon__button button">
-                <img class="menu-icon__background" alt="Основное меню" src="./Images/burger.svg">
-            </button>
-        </li>
-<!--        <img class="divider1" src="./Images/divider.svg">-->
-        <li>
-            <a class="logo" href="index.html">
-                <img class="logo__icon" alt="Логотип компании" src="./Images/GroupLogo.svg">
-            </a>
-        </li>
-    </div>
-
-    <div class="right-menu">
-        <li>
-            <button type="button" class="call button">
-                <img class="call__icon" alt="Позвонить в поддерку" src="./Images/call.svg">
-            </button>
-        </li>
-        <li>
-            <button type="button" class="chat button">
-                <img class="chat__icon" alt="Написать в поддержку" src="./Images/chat.svg">
-            </button>
-        </li>
-        <li>
-            <button type="button" class="profile button">
-                <img class="profile__icon" alt="Открыть профиль" src="./Images/profile.svg">
-            </button>
-        </li>
-<!--        <img class="divider2" src="./Images/divider.svg">-->
-        <li>
-            <button type="button" class="icon-repair button">
-                <img class="icon-repair__background" alt="Оставить заявку на ремонт" src="./Images/repair.svg">
-            </button>
-        </li>
-        <li>
-            <button class="icon-status-repair button">
-                <img class="icon-status-repair__background" alt="Проверить статус ремента"
-                     src="./Images/checkstatus.svg">
-            </button>
-        </li>
-
-    </div>
-</ul>
-
-<div class="background-page">
-    <div class="title_copy">
-<!--        <img class="title__copy-fill" src="./Images/highlight.svg">-->
-        <h1 class="title__copy-text">Услуги и сервисы</h1>
-        <div class="medium-menu"></div>
-        <div class="menu-mini">
-            <button type="button" class="menu-mini__button-repair button">
-                Оставить заявку&ensp;
-                <img class="icon-repair__background" alt="Оставить заявку на ремонт" src="./Images/repair.svg">
-            </button>
-            <button class="menu-mini__button-status-repair button">
-                Cтатус ремента&ensp;
-                <img class="icon-status-repair__background" alt="Проверить статус ремента" src="./Images/checkstatus.svg">
-            </button>
-        </div>
-    </div>
-
-    <nav class="slide-menu">
-        <input type="button" class="slide-menu__item1" value="Ремонтируемые устройства">
-        <div class="slide-menu__opacity"></div>
-<!--        <input class="slide-menu__item" type="button" value="Дополнительные услуги">-->
-        <input class="slide-menu__item" type="button" value="Ремонтируемые бренды">
-        <input class="slide-menu__item" type="button" value="Цены на услуги">
-        <input class="slide-menu__item" type="button" value="Адреса сервисных центров">
-        <input class="slide-menu__item" type="button" value="Специальные цены">
-        <input class="slide-menu__item" type="button" value="Отзывы">
-    </nav>
-
-    <div class="block-info">
-        <div class="block1">
-            <p class="block1__infoCPS">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у
-                нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-
-                <br><br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
-                большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                очередь, советуют нас родным и близким.
-            </p>
-<!--            <div class="link">-->
-                <button type="button" class="read-more button">
-                    <img class="read-more__icon" src="./Images/icon.svg" alt="Читать далее"> Читать далее
+<div class="page-content">
+    <div class="menu">
+        <ul class="left-menu">
+            <li class="menu-icon">
+                <button type="button" class="menu-icon__button button">
+                    <img class="menu-icon__background" alt="Основное меню" src="./Images/burger.svg">
                 </button>
-<!--            </div>-->
+            </li>
+            <!--        <img class="divider1" src="./Images/divider.svg">-->
+            <li class="logo">
+                <a class="logo__icon" href="index.html">
+                    <img alt="Логотип компании" src="./Images/GroupLogo.svg">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="right-menu">
+            <li>
+                <button type="button" class="call button">
+                    <img class="call__icon" alt="Позвонить в поддерку" src="./Images/call.svg">
+                </button>
+            </li>
+            <li>
+                <button type="button" class="chat button">
+                    <img class="chat__icon" alt="Написать в поддержку" src="./Images/chat.svg">
+                </button>
+            </li>
+            <li>
+                <button type="button" class="profile button">
+                    <img class="profile__icon" alt="Открыть профиль" src="./Images/profile.svg">
+                </button>
+            </li>
+            <!--        <img class="divider2" src="./Images/divider.svg">-->
+            <li>
+                <button type="button" class="repair button">
+                    <img class="repair__icon" alt="Оставить заявку на ремонт" src="./Images/repair.svg">
+                </button>
+            </li>
+            <li>
+                <button class="status-repair button">
+                    <img class="status-repair__icon" alt="Проверить статус ремента"
+                         src="./Images/checkstatus.svg">
+                </button>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="page">
+        <div class="title_copy">
+            <h1 class="copy-text">Услуги и сервисы</h1>
+            <div class="menu-mini">
+                <button type="button" class="menu-mini__button-repair button">
+                    <span>Оставить заявку&ensp;</span>
+                    <img alt="Оставить заявку на ремонт" src="./Images/repair.svg">
+                </button>
+                <button class="menu-mini__button-status-repair button">
+                    <span>Cтатус ремента&ensp;</span>
+                    <img alt="Проверить статус ремента" src="./Images/checkstatus.svg">
+                </button>
+            </div>
         </div>
-        <div class="block-img">
-            <img class="block-img__img" src="./Images/1.jpg">
+
+        <nav class="slide-menu">
+            <input type="button" class="slide-menu__item1" value="Ремонтируемые устройства">
+            <div class="slide-menu__opacity"></div>
+            <!--        <input class="slide-menu__item" type="button" value="Дополнительные услуги">-->
+            <input class="slide-menu__item" type="button" value="Ремонтируемые бренды">
+            <input class="slide-menu__item" type="button" value="Цены на услуги">
+            <input class="slide-menu__item" type="button" value="Адреса сервисных центров">
+            <input class="slide-menu__item" type="button" value="Специальные цены">
+            <input class="slide-menu__item" type="button" value="Отзывы">
+        </nav>
+
+        <div class="block-info">
+            <div class="block1">
+                <p class="block1__infoCPS">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только
+                    у
+                    нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+
+                    <br><br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                    большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в
+                    свою
+                    очередь, советуют нас родным и близким.
+                </p>
+                <!--            <div class="link">-->
+                <button type="button" class="read-more button">
+                    <img class="read-more__icon" src="./Images/icon.svg" alt="Читать далее"> <span>Читать далее</span>
+                </button>
+                <!--            </div>-->
+            </div>
+            <div class="block-img">
+                <img class="block-img__img" src="./Images/1.jpg">
+            </div>
         </div>
     </div>
 </div>

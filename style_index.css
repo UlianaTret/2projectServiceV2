@@ -5,7 +5,6 @@
 
 html {
     width: 100%;
-
     margin: 0;
     padding: 0;
     min-width: 320px;
@@ -62,88 +61,28 @@ input {
 }
 
 .left-menu {
-    left: 3.06%;
-    right: 91.84%;
-    top: 40px;
-    bottom: 87.3%;
-    width: 33%;
     display: flex;
     flex-direction: row;
-}
-
-.logo {
-    /*left: 22.73%;
-    right: 47.1%;
-    top: 18.59px;
-    bottom: 88.37%;
-    padding: 0 15px;*/
-    background: rgba(100%, 100%, 100%, 0);
-    border: rgba(100%, 100%, 100%, 0);
 }
 
 .right-menu {
-    left: 11.84%;
-    right: 88px;
-    top: 24px;
-    bottom: 87.3%;
-    width: 33%;
+    margin: 0 20px 0 0;
     display: flex;
     flex-direction: row;
-}
-
-.icon-repair__background {
-    left: 65%;
-    right: 22.5%;
-    top: 24px;
-    bottom: 89.28%;
-    border-radius: 20px;
-}
-
-.icon-status-repair__background {
-    left: 82.5%;
-    right: 5%;
-    top: 24px;
-    bottom: 89.28%;
-    border-radius: 20px;
 }
 
 .menu-mini {
     display: none;
 }
 
-.background-page {
-    width: 100%;
-    height: 509px;
-    left: 0;
-    top: 88px;
-    background: #F8F8F8;
+.title_copy {
+    margin: 10px 0 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    border-left: 3px solid #41F6D7;
 }
 
-.title__copy {
-    display: flex;
-}
-
-    .title_copy {
-        margin: 30px 0 0;
-        display: flex;
-        flex-direction: row;
-        border-left: 3px solid #41F6D7;
-    }
-
-.title__copy-fill {
-    height: 40px;
-    width: 4px;
-    left: 0;
-    background: #41F6D7;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-
-}
-
-.title__copy-text {
+.copy-text {
     height: 40px;
     width: 288px;
     left: 16px;
@@ -171,14 +110,10 @@ nav input {
     color: #7E7E82;
 }
 
-
-
-
-
-
 .slide-menu {
     width: auto;
     height: 40px;
+    margin: 10px 0;
 
     display: flex;
     flex-direction: row;
@@ -196,10 +131,11 @@ nav input {
     top: 120px;
     bottom: 63.82%;
     order: 999;
-    background: linear-gradient(270deg, red 16.84%, rgba(248, 248, 248, 0.0001) 100%); /*F8F8F8*/
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); /*F8F8F8*/
     height: 70px;
     z-index: 100;
 }
+
 
 .slide-menu::-webkit-scrollbar {
     display: none;
@@ -218,39 +154,26 @@ nav input {
     cursor: pointer;
 }
 
-    .block-info {
-
-        display: flex;
-        flex-direction: column;
-    }
-
-.block1 {
-    width: auto;
+.block-info {
     display: flex;
     flex-direction: column;
 }
 
+.block1 {
+    display: flex;
+    flex-direction: column;
+}
 
-
-
-/*.block1__infoCPS {
+.block1__infoCPS {
+    height: 110px;
+    margin: 20px 0 0;
     font-size: 14px;
     line-height: 18px;
     text-align: left;
     letter-spacing: 0.2px;
     color: #1B1C21;
     overflow: hidden;
-}*/
-
-    /*.block1__infoCPS {
-        width: auto;
-        left: 24px;
-        font-width: 500;
-        overflow: hidden;
-    }*/
-
-
-
+}
 
 .read-more__icon {
     height: 10px;
@@ -261,14 +184,12 @@ nav input {
 
 .read-more {
     height: 24px;
-    width: 100px;
-    left: 48px;
-    top: 120px;
+    width: 115px;
+    margin: 8px 0;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     text-align: left;
-    white-space: nowrap;
 }
 
 .block-img__img {
@@ -276,86 +197,30 @@ nav input {
     width: 100%;
     height: auto;
     border-radius: 6px;
-    border: 2px solid red;
     }
 
+/*.page-content{
+        border: 1px solid red;
+    }*/
 
 
-
-
-
-
-
-
-
-
-
-
- /* Стили для планшетов*/
-    .link-repair, .link-status-repair {
-        display: none;
-    }
-
-
-
-    .left-menu {
-        padding: 18px;
-        display: flex;
-        flex-direction: row;
-        left: 10px;
-        width: 25%;
-    }
-
-    .right-menu {
-        padding: 18px 0;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .slide-menu__item:hover {
-        background: #FFFFFF;
-        border: 2px solid #B8FFEC;
-        border-radius: 6px;
-        z-index: auto;
-    }
-
-
-    .title_copy {
-        margin: 10px 0 0;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .title__copy-text {
-        margin: 0 0 0 10px;
-    }
-
-    .slide-menu {
-        /*display: flex;
-        flex-direction: row;*/
-        /*overflow: hidden;*/
-        /*overflow-x: auto;
-        margin: 7px;
-        height: 40px;
-        width: auto;*/
-    }
-
-    .slide-menu__opacity {
-        position: fixed;
-        top: 23%;
-        /*order: 999;*/
-        background: linear-gradient(270deg, red 16.84%, rgba(248, 248, 248, 0.0001) 100%); /*F8F8F8*/
-        height: 70px;
-    }
-
-
-
-
-@media screen and (min-width: 768px) and (max-width: 1119px) {
+@media screen and (min-width: 768px) and (max-width: 1119px) { /*стили для планшетов*/
     .call, .chat, .profile {
         display: unset;
     }
 
+    .repair {
+        padding: 0 0 0 10px;
+        border-left: 2px solid #EAEAEA;
+    }
+    .menu-icon__background{
+        padding: 0 10px 0 0;
+        border-right: 2px solid #EAEAEA;
+    }
+
+    .slide-menu {
+        margin: 10px 0;
+    }
     .block-info {
         height: auto;
         display: flex;
@@ -363,28 +228,11 @@ nav input {
     }
 
     .block1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .block1__infoCPS {
-        font-width: 500;
-        overflow: hidden;
-    }
-
-    .read-more__button {
-        border-color: rgba(150, 150, 150, 0);
-        background: rgba(0, 0, 0, 0);
-        margin-left: 10px;
-        width: 150px;
-        font-family: 'TT Lakes', serif;
+        width: 65%;
     }
 
     .block-img__img {
-        left: 400px;
-        right: 5.1%;
         margin: 30px 10px;
-        bottom: 2.85%;
         width: 100%;
         height: auto;
         border-radius: 6px;
@@ -394,14 +242,19 @@ nav input {
 @media screen and (min-width: 1120px) {
     /* Стили для ПК */
     body {
-        display: flex;
+        display:flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+    }
+    .page-content{
+        width: 1120px;
     }
 
-    .menu, .slide-menu__opacity, {
+    .menu, .slide-menu__opacity {
         display: none;
+    }
+    .mini-menu {
+        display: unset;
     }
 
     .title_copy {
@@ -410,7 +263,7 @@ nav input {
         justify-content: space-between;
     }
 
-    .title__copy-text {
+    .copy-text {
         margin: 15px 0 0 10px;
     }
 
@@ -440,80 +293,22 @@ nav input {
         justify-content: center;
     }
 
-    .background-page {
-        height: 509px;
-        display: flex;
-        flex-direction: column;
-    }
+    .slide-menu {
+        width: auto;
+        height: 90px;
+        margin: 10px 0;
 
-    .title__copy {
-        height: 40px;
-        left: 2.94%;
-        right: 76.27%;
-        top: 7.85%;
         display: flex;
         flex-direction: row;
-    }
-
-    .title__copy-fill {
-        height: 40px;
-        width: 4px;
-        background: #41F6D7;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-    }
-
-    .title__copy-text {
-        height: 40px;
-        width: 288px;
-        left: 16px;
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 40px;
-        letter-spacing: -0.6px;
-        color: #1B1C21;
-    }
-
-    .slide-menu {
-        width: 1120px;
-        height: 100px;
-        left: 16px;
-        display: flex;
         flex-wrap: wrap;
-        flex-flow: row wrap;
-    }
+}
 
     .block-info {
-        top: 250px;
         height: auto;
         display: flex;
         flex-direction: row;
     }
-
     .block1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .block1__infoCPS {
-        width: auto;
-        height: 145px;
-        font-width: 500;
-        overflow: hidden;
-    }
-
-    .read-more__button {
-        border-color: rgba(150, 150, 150, 0);
-        background: rgba(0, 0, 0, 0);
-        width: 150px;
-        font-family: 'TT Lakes', serif;
-    }
-
-    .block-img__img {
-        /*margin: 30px 10px;*/
-        /*padding: 0 30px;*/
-        width: auto;
-        height: auto;
-        border-radius: 6px;
+        width: 65%;
     }
 }
