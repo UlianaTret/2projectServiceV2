@@ -31,6 +31,11 @@ li {
     font-family: 'TT Lakes', serif;
 }
 
+.menu-icon, .call, .chat, .profile, .repair, .status-repair {
+    height: 44px;
+    margin-top: 5px;
+}
+
 a, input, button:hover {
     cursor: pointer;
 }
@@ -75,7 +80,8 @@ input {
 }
 
 .copy-text {
-    padding: 15px 0 0 10px;
+    padding-left: 15px; /* 0 0 10px;*/
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     border-left: 3px solid #41F6D7;
@@ -192,23 +198,26 @@ nav input {
     width: 100%;
     height: auto;
     border-radius: 6px;
-    }
+}
+
 
 /*.page-content{
         border: 1px solid red;
     }*/
 
 
-@media screen and (min-width: 768px) and (max-width: 1119px) { /*стили для планшетов*/
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    /*стили для планшетов*/
     .call, .chat, .profile {
         display: unset;
     }
 
     .repair {
-        padding: 0 0 0 10px;
+        padding-left: 10px;
         border-left: 2px solid #EAEAEA;
     }
-    .menu-icon__background{
+
+    .menu-icon__background {
         padding: 0 10px 0 0;
         border-right: 2px solid #EAEAEA;
     }
@@ -216,6 +225,7 @@ nav input {
     .slide-menu {
         margin: 10px 0;
     }
+
     .block-info {
         height: auto;
         display: flex;
@@ -237,17 +247,19 @@ nav input {
 @media screen and (min-width: 1120px) {
     /* Стили для ПК */
     body {
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
-    .page-content{
+
+    .page-content {
         width: 1120px;
     }
 
     .menu, .slide-menu__opacity {
         display: none;
     }
+
     .mini-menu {
         display: unset;
     }
@@ -259,8 +271,8 @@ nav input {
     }
 
     .copy-text {
-        margin: 15px 0 0 10px;
-        padding-bottom: 10px;
+        margin: 15px 0 10px 10px;
+        /*padding-bottom: 10px;*/
         border-left: 3px solid #41F6D7;
     }
 
@@ -298,13 +310,18 @@ nav input {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-}
+    }
+
+    span {
+        padding: 0 10px;
+    }
 
     .block-info {
         height: auto;
         display: flex;
         flex-direction: row;
     }
+
     .block1 {
         width: 65%;
     }
