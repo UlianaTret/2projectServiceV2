@@ -85,6 +85,11 @@ a, input, button:hover {
     flex-direction: row;
 }
 
+.list-menu button {
+    width: 320px;
+    padding-bottom: 5px;
+}
+
 .additional-list, .lang {
     display: flex;
     flex-direction: row;
@@ -134,4 +139,25 @@ span {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
+}
+
+.list-menu__item:hover button { /*стили для списка меню*/
+    transition-duration: 0.5s;
+    filter: hue-rotate(180deg);
+    border-left: #41F6D7 solid 3px;
+    font-size: 40px;
+    font-weight: bold;
+    box-shadow: 0 0 30px rgba(14, 24, 80, 0.2);
+}
+
+li button:hover { /*стили для кнопок в меню*/
+    transition-duration: 1s;
+    filter: hue-rotate(-30deg);
+}
+
+.lang span:hover { /*стили для выбора языка*/
+    transition-duration: 1s;
+    background: plum;
+    box-shadow: 0 5px 5px 5px plum; /* x,y, blur, len, color*/
+    color: #1B1C21;
 }
