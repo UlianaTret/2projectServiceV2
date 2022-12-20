@@ -70,6 +70,7 @@ a, input, button:hover {
 .head-menu {
     width: 100%;
     background: #FFFFFF;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -84,6 +85,8 @@ a, input, button:hover {
     display: flex;
     flex-direction: row;
 }
+
+
 
 .list-menu button {
     width: 320px;
@@ -145,6 +148,7 @@ span {
     transition-duration: 0.5s;
     /*filter: hue-rotate(180deg);*/
     border-left: #41F6D7 solid 3px;
+    color: black;
     font-size: 40px;
     font-weight: bold;
     height: 50px;
