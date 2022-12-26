@@ -190,7 +190,7 @@ li button:hover { /*стили для кнопок в меню*/
     }
 
     .additional-list button, .head-menu li {
-        scale: 0.7;
+        scale: 0.5;
         margin: 0;
         padding: 0;
     }
