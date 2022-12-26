@@ -21,7 +21,6 @@ a, button {
     line-height: 32px;
     letter-spacing: -0.6000000238418579px;
     text-align: left;
-
 }
 
 li {
@@ -85,8 +84,6 @@ a, input, button:hover {
     display: flex;
     flex-direction: row;
 }
-
-
 
 .list-menu button {
     width: 320px;
@@ -163,4 +160,66 @@ li button:hover { /*стили для кнопок в меню*/
 .lang span:hover { /*стили для выбора языка*/
     transition-duration: 1s;
     opacity: 0.5;
+}
+
+@media screen  and (max-height: 800px) {
+    .list-menu__item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .additional-list button, .head-menu li {
+        scale: 0.7;
+    }
+
+    .list-menu__item:hover button { /*стили для списка меню*/
+        transition-duration: 0.5s;
+        border-left: #41F6D7 solid 3px;
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+        height: 40px;
+        box-shadow: 0 0 30px rgba(14, 24, 80, 0.2);
+    }
+}
+
+@media screen  and (max-height: 400px) {
+    .list-menu__item {
+        margin: 3px;
+        padding: 0;
+    }
+
+    .additional-list button, .head-menu li {
+        scale: 0.7;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bottom-menu, .contact, .lang {
+        scale: 0.9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .additional-list {
+        height: 45px;
+    }
+
+    .list-menu__item {
+        height: 20px;
+    }
+
+    .active-button {
+        height: 25px;
+    }
+
+    .list-menu__item:hover button { /*стили для списка меню*/
+        /*transition-duration: 0.5s;*/
+        /*border-left: #41F6D7 solid 3px;*/
+        /*color: black;*/
+        font-size: 20px;
+        /*font-weight: bold;*/
+        height: 25px;
+        /*box-shadow: 0 0 30px rgba(14, 24, 80, 0.2);*/
+    }
 }
