@@ -183,7 +183,7 @@ li button:hover { /*стили для кнопок в меню*/
     }
 }
 
-@media screen  and (max-height: 450px) {
+@media screen  and (max-height: 600px) {
     .list-menu__item {
         margin: 3px;
         padding: 0;
@@ -214,12 +214,7 @@ li button:hover { /*стили для кнопок в меню*/
     }
 
     .list-menu__item:hover button { /*стили для списка меню*/
-        /*transition-duration: 0.5s;*/
-        /*border-left: #41F6D7 solid 3px;*/
-        /*color: black;*/
         font-size: 20px;
-        /*font-weight: bold;*/
         height: 25px;
-        /*box-shadow: 0 0 30px rgba(14, 24, 80, 0.2);*/
     }
 }
