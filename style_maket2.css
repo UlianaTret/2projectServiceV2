@@ -183,7 +183,7 @@ li button:hover { /*стили для кнопок в меню*/
     }
 }
 
-@media screen  and (max-height: 400px) {
+@media screen  and (max-height: 450px) {
     .list-menu__item {
         margin: 3px;
         padding: 0;
