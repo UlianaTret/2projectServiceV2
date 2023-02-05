@@ -182,7 +182,7 @@ input, span {
         flex-wrap: wrap;
     }
 
-    .slider {
+    .slider,  #item7, #item8, #item9, #item10, #item11 {
         display: none;
     }
 
@@ -207,7 +207,7 @@ input, span {
         flex-wrap: wrap;
     }
 
-    .slider {
+    .slider, #item9, #item10, #item11 {
         display: none;
     }
 
