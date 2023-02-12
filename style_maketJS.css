@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -29,7 +31,9 @@ html {
     border-top: 1px solid #D9FFF5;
     justify-content: right;
 }
-h3 { /*выравнивание в градиенте*/
+h3 {
+    margin: 16px;
+    /*выравнивание в градиенте*/
     font-weight: normal;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
@@ -85,7 +89,6 @@ li {
 }
 
 .img {
-    /*border: 1px solid rebeccapurple;*/
     /*центрирование по вертикали*/
     position: relative;
     top: 50%;
@@ -101,13 +104,8 @@ input, span {
     font-family: 'TT Lakes', serif;
 }
 
-
-
-
-
 .list-logo{
     width: auto;
-    /*height: 40px;*/
     margin: 10px 0 10px 15px;
 
     display: flex;
@@ -121,7 +119,6 @@ input, span {
 .list-logo::-webkit-scrollbar {
     display: none;
 }
-
 
 .slide-menu__opacity {
     position: fixed;
@@ -142,38 +139,96 @@ input, span {
     display: none;
 }
 
-.btn {
-    border: rebeccapurple 1px solid;
+
+
+
+.page-content{ /*удалить*/
+        border: black 1px solid;
+    }
+/*//////////////////////START slider/////////////////*/
+.wrapper{
+    /*padding: 30px;*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: green 1px solid;
+    box-shadow: -15px 0 10px red inset;
+    /*background-image: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);*/
+
 }
 
-
-
-
-
-
-
-.page-content{
-        border: 1px solid red;
-    }
-/*//////////////////////slider/////////////////*/
-.content {
-    margin: auto;
-    padding: 30px;
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
+/* Слайдер */
+.slick-slider{
+    min-width: 0;
+    margin-top: 5px;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: flex-start;
 }
 
 .slider {
-    display: flex;
-    flex-direction: row;
+    position: relative;
+    /*padding: 0 10px;*/
+    border: darkgoldenrod 1px solid;
 }
 
-/*//////////////////////slider/////////////////*/
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0 7px;
+    padding: 0;
+}
+
+.slider .slick-dots button{
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #DDDDDD;
+    border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+    background-color: #B5B6BC;
+}
+
+.slider .slick-arrow{
+    font-size: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider__item {
+    margin: 0 30px;
+    max-width: 100%;
+}
+
+
+
+
+/*//////////////////////END slider/////////////////*/
+
+.content-companies {
+    display: none;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1119px) {
     /*стили для планшетов*/
+    .content-companies, .show-more {
+        display: unset;
+    }
+
     .page-content {
         width: 768px;
     }
@@ -187,7 +242,8 @@ input, span {
     }
 
     .show-more {
-        display: unset;
+        margin-left: 28px;
+        border: rebeccapurple 1px solid;
     }
 }
 
@@ -197,6 +253,9 @@ input, span {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .content-companies, .show-more {
+        display: unset;
     }
 
     .page-content {
@@ -212,25 +271,8 @@ input, span {
     }
 
     .show-more {
-        display: unset;
-        width: auto;
-        height: auto;
-        margin: 8px 0;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        text-align: left;
+        margin-left: 28px;
+        border: rebeccapurple 1px solid;
     }
 
-    .show-more__icon {
-        height: 10px;
-        width: 7px;
-        left: 24px;
-        top: 127px;
-        transform: translateY(50%);
-    }
-
-    span {
-        padding: 0 10px;
-    }
 }

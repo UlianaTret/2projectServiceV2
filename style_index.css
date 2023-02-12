@@ -113,8 +113,7 @@ nav input {
     color: #7E7E82;
 }
 
-.slide-menu {
-    width: auto;
+.slide-menu {    width: auto;
     height: 40px;
     margin: 10px 0 10px 15px;
 
@@ -125,6 +124,7 @@ nav input {
     overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none; /*Скрывает скролл в Firefox*/
+
 }
 
 .slide-menu__opacity {
