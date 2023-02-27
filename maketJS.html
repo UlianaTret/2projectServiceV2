@@ -5,171 +5,182 @@
     <title>Макет 1.5</title>
     <link href="style_maketJS.css" rel="stylesheet">
     <link href="./font/stylesheet.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+<!--    <link href="swiper-bundle.min.css" rel="stylesheet"/>-->
 </head>
 <body>
-
-
 <div class="page-content">
     <div class="menu">
         <h3>Ремонт техники различных брендов</h3>
     </div>
 
-
     <div class="wrapper">
         <!-- список для телефона -->
-            <ul class="slider">
-                <li class="slider__item" >
-                    <button type="button" class="button-logo">2
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <button type="button" class="button-logo">
+                        <img class="icon-lenovo img" alt="Логотип Lenovo" src="./Images/logo_lenovo.svg">
+                        <img class="icon-go img" alt="Открыть описание Lenovo" src="./Images/go.svg">
+                    </button>
+                </div>
+                <div class="swiper-slide">
+                    <button type="button" class="button-logo">
                         <img class="icon-samsung img" alt="Логотип Samsung" src="./Images/logo_samsung.svg">
                         <img class="icon-go img" alt="Открыть описание Samsung" src="./Images/go.svg">
                     </button>
-                </li>
-                <li class="slider__item">
-                    <button type="button" class="button-logo">3
+                </div>
+                <div class="swiper-slide">
+                    <button type="button" class="button-logo">
                         <img class="icon-apple img" alt="Логотип Apple" src="./Images/logo_apple.svg">
                         <img class="icon-go img" alt="Открыть описание Apple" src="./Images/go.svg">
                     </button>
-                </li>
-                <li class="slider__item">
-                    <button type="button" class="button-logo">4
+                </div>
+                <div class="swiper-slide">
+                    <button type="button" class="button-logo">
                         <img class="icon-viewsonic img" alt="Логотип Viewsonic" src="./Images/logo_viewsonic.svg">
                         <img class="icon-go img" alt="Открыть описание Viewsonic" src="./Images/go.svg">
                     </button>
-                </li>
-                <li class="slider__item">
-                    <button type="button" class="button-logo">5
+                </div>
+                <div class="swiper-slide">
+                    <button type="button" class="button-logo">
                         <img class="icon-bosch img" alt="Логотип Bosch" src="./Images/logo_bosch.svg">
                         <img class="icon-go img" alt="Открыть описание Bosch" src="./Images/go.svg">
                     </button>
-                </li>
-                <li class="slider__item">
-                    <button type="button" class="button-logo">6
+                </div>
+                <div class="swiper-slide">
+                    <button type="button" class="button-logo">
                         <img class="icon-hp img" alt="Логотип HP" src="./Images/logo_hp.svg">
                         <img class="icon-go img" alt="Открыть описание HP" src="./Images/go.svg">
                     </button>
-                </li>
-                <li class="slider__item">
-                    <button type="button" class="button-logo">7
+                </div>
+                <div class="swiper-slide">
+                    <button type="button" class="button-logo">
                         <img class="icon-acer img" alt="Логотип Acer" src="./Images/logo_acer.svg">
                         <img class="icon-go img" alt="Открыть описание Acer" src="./Images/go.svg">
                     </button>
-                </li>
-                <li class="slider__item">
-                    <button type="button" class="button-logo">8
+                </div>
+                <div class="swiper-slide">
+                    <button type="button" class="button-logo">
                         <img class="icon-sony img" alt="Логотип Sony" src="./Images/logo_sony.svg">
                         <img class="icon-go img" alt="Открыть описание Sony" src="./Images/go.svg">
                     </button>
-                </li>
-                <li class="slider__item">
-                    <button type="button" class="button-logo">9
+                </div>
+                <div class="swiper-slide">
+                    <button type="button" class="button-logo">
                         <img class="icon-lenovo img" alt="Логотип Lenovo" src="./Images/logo_lenovo.svg">
                         <img class="icon-go img" alt="Открыть описание Lenovo" src="./Images/go.svg">
                     </button>
-                </li>
-                <li class="slider__item">
-                    <button type="button" class="button-logo">10
+                </div>
+                <div class="swiper-slide">
+                    <button type="button" class="button-logo">
                         <img class="icon-samsung img" alt="Логотип Samsung" src="./Images/logo_samsung.svg">
                         <img class="icon-go img" alt="Открыть описание Samsung" src="./Images/go.svg">
                     </button>
-                </li>
-                <li class="slider__item">
-                    <button type="button" class="button-logo">11
+                </div>
+                <div class="swiper-slide">
+                    <button type="button" class="button-logo">
                         <img class="icon-apple img" alt="Логотип Apple" src="./Images/logo_apple.svg">
                         <img class="icon-go img" alt="Открыть описание Apple" src="./Images/go.svg">
                     </button>
-                </li>
-                <li class="slider__item">
-                    <button type="button" class="button-logo">1
-                        <img class="icon-lenovo img" alt="Логотип Lenovo" src="./Images/logo_lenovo.svg">
-                        <img class="icon-go img" alt="Открыть описание Lenovo" src="./Images/go.svg">
-                    </button>
-                </li>
-            </ul>
+                </div>
+
+            </div>
+            <!--        <div class="swiper-button-prev"></div>-->
+            <!--        <div class="swiper-button-next"></div>-->
+            <div class="swiper-pagination"></div>
+            <!--            <div class="swiper-scrollbar"></div>-->
+        </div>
     </div>
 
     <div class="content-companies">
         <ul class="list-logo" id="list-logo">
-<!--            список для компа и планшета-->
-            <li class="list-logo_item" id="item1">
-                <button type="button" class="button-logo">1
+            <!--            список для компа и планшета-->
+            <li class="list-logo_item">
+                <button type="button" class="button-logo">
                     <img class="icon-lenovo img" alt="Логотип Lenovo" src="./Images/logo_lenovo.svg">
                     <img class="icon-go img" alt="Открыть описание Lenovo" src="./Images/go.svg">
                 </button>
             </li>
-            <li class="list-logo_item" id="item2">
-                <button type="button" class="button-logo">2
+            <li class="list-logo_item">
+                <button type="button" class="button-logo">
                     <img class="icon-samsung img" alt="Логотип Samsung" src="./Images/logo_samsung.svg">
                     <img class="icon-go img" alt="Открыть описание Samsung" src="./Images/go.svg">
                 </button>
             </li>
-            <li class="list-logo_item" id="item3">
-                <button type="button" class="button-logo">3
+            <li class="list-logo_item">
+                <button type="button" class="button-logo">
                     <img class="icon-apple img" alt="Логотип Apple" src="./Images/logo_apple.svg">
                     <img class="icon-go img" alt="Открыть описание Apple" src="./Images/go.svg">
                 </button>
             </li>
-            <li class="list-logo_item" id="item4">
-                <button type="button" class="button-logo">4
+            <li class="list-logo_item">
+                <button type="button" class="button-logo">
                     <img class="icon-viewsonic img" alt="Логотип Viewsonic" src="./Images/logo_viewsonic.svg">
                     <img class="icon-go img" alt="Открыть описание Viewsonic" src="./Images/go.svg">
                 </button>
             </li>
-            <li class="list-logo_item" id="item5">
-                <button type="button" class="button-logo">5
+            <li class="list-logo_item">
+                <button type="button" class="button-logo">
                     <img class="icon-bosch img" alt="Логотип Bosch" src="./Images/logo_bosch.svg">
                     <img class="icon-go img" alt="Открыть описание Bosch" src="./Images/go.svg">
                 </button>
             </li>
-            <li class="list-logo_item" id="item6">
-                <button type="button" class="button-logo">6
+            <li class="list-logo_item">
+                <button type="button" class="button-logo">
                     <img class="icon-hp img" alt="Логотип HP" src="./Images/logo_hp.svg">
                     <img class="icon-go img" alt="Открыть описание HP" src="./Images/go.svg">
                 </button>
             </li>
-            <li class="list-logo_item" id="item7">
-                <button type="button" class="button-logo">7
+            <li class="list-logo_item">
+                <button type="button" class="button-logo">
                     <img class="icon-acer img" alt="Логотип Acer" src="./Images/logo_acer.svg">
                     <img class="icon-go img" alt="Открыть описание Acer" src="./Images/go.svg">
                 </button>
             </li>
-            <li class="list-logo_item" id="item8">
-                <button type="button" class="button-logo">8
+            <li class="list-logo_item">
+                <button type="button" class="button-logo">
                     <img class="icon-sony img" alt="Логотип Sony" src="./Images/logo_sony.svg">
                     <img class="icon-go img" alt="Открыть описание Sony" src="./Images/go.svg">
                 </button>
             </li>
-            <li class="list-logo_item" id="item9">
-                <button type="button" class="button-logo">9
+            <li class="list-logo_item">
+                <button type="button" class="button-logo">
                     <img class="icon-lenovo img" alt="Логотип Lenovo" src="./Images/logo_lenovo.svg">
                     <img class="icon-go img" alt="Открыть описание Lenovo" src="./Images/go.svg">
                 </button>
             </li>
-            <li class="list-logo_item" id="item10">
-                <button type="button" class="button-logo">10
+            <li class="list-logo_item">
+                <button type="button" class="button-logo">
                     <img class="icon-samsung img" alt="Логотип Samsung" src="./Images/logo_samsung.svg">
                     <img class="icon-go img" alt="Открыть описание Samsung" src="./Images/go.svg">
                 </button>
             </li>
-            <li class="list-logo_item" id="item11">
-                <button type="button" class="button-logo">11
+            <li class="list-logo_item">
+                <button type="button" class="button-logo">
                     <img class="icon-apple img" alt="Логотип Apple" src="./Images/logo_apple.svg">
                     <img class="icon-go img" alt="Открыть описание Apple" src="./Images/go.svg">
                 </button>
             </li>
         </ul>
 
-        <button id="btn-moreless" type="button" class="show-more button btn" onclick="hiddenElems()" value="true">
-            <img id="img-moreless" class="show-more__icon" src="./Images/icon.svg" alt="Показать все / Скрыть"> <span id="text-btn">Показать все</span>
+        <button id="btn-more" type="button" class="show-more button btn">
+            <img class="show-more__icon" src="./Images/icon.svg" alt="Показать все"> <span>Показать все</span>
         </button>
+        <button id="btn-less" type="button" class="show-less button btn">
+            <img class="show-less__icon" src="./Images/icon.svg" alt="Скрыть"> <span>Скрыть</span>
+        </button>
+        <!--        <button id="btn-less" type="button" class="show-more button btn" onclick="hiddenElems()" value="true">-->
+        <!--            <img class="show-more__icon" src="./Images/icon.svg" alt="Показать все / Скрыть"> <span>Показать все</span>-->
+        <!--        </button>-->
     </div>
 </div>
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<!-- слайдер Slick -->
-<script src="js/slick.min.js"></script>
-<!-- Подключаем файлы скриптов -->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="./js/maketJS.js"></script>
-<script src="./js/script.js"></script>
 </body>
 </html>

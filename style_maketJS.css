@@ -15,7 +15,6 @@ html {
     color: black;
 }
 
-
 .menu { /*градиент*/
     left: 0;
     right: 0;
@@ -23,6 +22,7 @@ html {
     bottom: 85.26%;
     width: 100%;
     border-radius: 0;
+    margin-bottom: 10px;
     background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
 
@@ -31,6 +31,7 @@ html {
     border-top: 1px solid #D9FFF5;
     justify-content: right;
 }
+
 h3 {
     margin: 16px;
     /*выравнивание в градиенте*/
@@ -39,12 +40,12 @@ h3 {
 }
 
 .page-content {
-    width: 320px;
+    width: auto; /*320px;*/
     display: flex;
     flex-direction: column;
 }
 
-.list-logo {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! В СТРОЧКУ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.list-logo {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -66,15 +67,14 @@ a, button {
     flex-direction: row;
     justify-content: space-between;
 }
+
 .button-logo {
     height: 72px;
     width: 240px;
     border-radius: 6px;
-    /*border: 1px solid rebeccapurple;*/
 }
 
-
-.show-more {
+.show-more, .show-less {
     background: rgba(0, 0, 0, 0);
     border: 1px solid rgba(0, 0, 0, 0);
 }
@@ -104,7 +104,7 @@ input, span {
     font-family: 'TT Lakes', serif;
 }
 
-.list-logo{
+.list-logo {
     width: auto;
     margin: 10px 0 10px 15px;
 
@@ -116,6 +116,7 @@ input, span {
     -ms-overflow-style: none;
     scrollbar-width: none; /*Скрывает скролл в Firefox*/
 }
+
 .list-logo::-webkit-scrollbar {
     display: none;
 }
@@ -131,6 +132,7 @@ input, span {
     height: 70px;
     z-index: 100;
 }
+
 .slide-menu::-webkit-scrollbar {
     display: none;
 }
@@ -139,87 +141,52 @@ input, span {
     display: none;
 }
 
-
-
-
-.page-content{ /*удалить*/
-        border: black 1px solid;
-    }
 /*//////////////////////START slider/////////////////*/
-.wrapper{
-    /*padding: 30px;*/
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    border: green 1px solid;
-    box-shadow: -15px 0 10px red inset;
-    /*background-image: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);*/
-
-}
-
-/* Слайдер */
-.slick-slider{
-    min-width: 0;
-    margin-top: 5px;
-}
-/* Ограничивающая оболочка */
-.slick-list {
-    overflow: hidden;
-}
-/* Лента слайдов */
-.slick-track{
-    display: flex;
-    align-items: flex-start;
-}
-
-.slider {
+.swiper-slide, swiper-slide {
     position: relative;
-    /*padding: 0 10px;*/
-    border: darkgoldenrod 1px solid;
+    transition-property: transform;
+    display: block
 }
 
-.slider .slick-dots{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+.swiper-container::-webkit-scrollbar { /*скрыть скролл*/
+    display: none;
 }
 
-.slider .slick-dots li{
-    list-style: none;
-    margin: 0 7px;
-    padding: 0;
+.swiper-container {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; /*Скрывает скролл в Firefox*/
+
 }
 
-.slider .slick-dots button{
-    font-size: 0;
-    width: 12px;
-    height: 12px;
-    background-color: #DDDDDD;
-    border-radius: 50%;
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: auto; /*var(--swiper-pagination-bottom,8px);*/
+    /*указать вычисление отступа*/
+    top: 180px; /*var(--swiper-pagination-top,auto);*/
+    left: 10px;
+    height: fit-content;
 }
-
-.slider .slick-dots li.slick-active button{
-    background-color: #B5B6BC;
-}
-
-.slider .slick-arrow{
-    font-size: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider__item {
-    margin: 0 30px;
-    max-width: 100%;
-}
-
-
-
 
 /*//////////////////////END slider/////////////////*/
 
 .content-companies {
+    display: none;
+}
+
+.list-logo {
+    overflow: hidden;
+    height: 180px;
+}
+
+.show-more, .show-less {
+    margin-left: 28px;
+}
+
+.show-less__icon {
+    rotate: 180deg;
+}
+
+.show-less {
     display: none;
 }
 
@@ -230,20 +197,15 @@ input, span {
     }
 
     .page-content {
-        width: 768px;
+        width: auto;
     }
 
     .list-logo {
         flex-wrap: wrap;
     }
 
-    .slider,  #item7, #item8, #item9, #item10, #item11 {
+    .slider, .wrapper {
         display: none;
-    }
-
-    .show-more {
-        margin-left: 28px;
-        border: rebeccapurple 1px solid;
     }
 }
 
@@ -254,6 +216,7 @@ input, span {
         justify-content: center;
         align-items: center;
     }
+
     .content-companies, .show-more {
         display: unset;
     }
@@ -266,13 +229,7 @@ input, span {
         flex-wrap: wrap;
     }
 
-    .slider, #item9, #item10, #item11 {
+    .slider, .wrapper {
         display: none;
     }
-
-    .show-more {
-        margin-left: 28px;
-        border: rebeccapurple 1px solid;
-    }
-
 }
