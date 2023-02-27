@@ -1,42 +1,35 @@
-var num;
-var count;
-var val = '';
+var elem = document.getElementById('btn-more');
 
-function hiddenElems() {
-    let v = document.getElementById('btn-moreless').value;
-    let elem = document.getElementById('btn-moreless');
-
-    if (v === "true") { //показать элементы
-        document.getElementById('img-moreless').style.transform = 'rotate(180deg)';
-        //document.getElementById('img-moreless').style.marginTop= "5px;";
-        document.getElementById("text-btn").innerHTML = "Скрыть";
-        elem.setAttribute('value', 'false');
-        val = 'unset';
-    } else { //скрыть элементы
-        document.getElementById('img-moreless').style.transform = '';
-        document.getElementById("text-btn").innerHTML = "Показать все";
-        elem.setAttribute('value', 'true');
-        val = 'none';
+elem.addEventListener('click', {
+    handleEvent(event) {
+        document.getElementById('list-logo').style.overflow = 'visible';
+        document.getElementById('list-logo').style.height = '100%';
+        document.getElementById('btn-more').style.display = 'none';
+        document.getElementById('btn-less').style.display = 'unset';
     }
+});
 
-    let screenWidth = window.screen.width;
+var test1 = document.getElementById('btn-less');
 
-    if (screenWidth > 768 && screenWidth < 1119) {
-        num = 7; //hidden 5
-    } else {
-        num = 9; //hidden 3
+test1.addEventListener('click', {
+    handleEvent(event) {
+        document.getElementById('list-logo').style.overflow = '';
+        document.getElementById('list-logo').style.height = '';
+        document.getElementById('btn-more').style.display = 'unset';
+        document.getElementById('btn-less').style.display = 'none';
     }
+});
 
-    count = 1;
-    let id = '';
-    let nodes = document.getElementById('list-logo').children;
-
-    for (let count of (nodes)) {
-        while (num <= document.getElementById('list-logo').children.length) {
-            id = 'item' + String(num);
-            document.getElementById(id).style.display = val;
-            num += 1;
-            count += 1;
-        }
-    }
-}
+// slider
+const swiper = new Swiper('.swiper-container', {
+    loop: false, //бесконечность прокрутки
+    pagination: {//точки
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    scrollbar: false,
+    spaceBetween: 10, // расстояние между слайдами
+    speed: 800, // скорость прокрутки
+    autoHeight: true,// высота слайда
+    width: 250,
+});
