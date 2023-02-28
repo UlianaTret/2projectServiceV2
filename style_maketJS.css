@@ -84,10 +84,6 @@ li {
     padding: 8px;
 }
 
-._hidden {
-    display: none;
-}
-
 .img {
     /*центрирование по вертикали*/
     position: relative;
@@ -110,30 +106,9 @@ input, span {
 
     display: flex;
     flex-direction: row;
-    overflow-y: auto;
-
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none; /*Скрывает скролл в Firefox*/
 }
 
 .list-logo::-webkit-scrollbar {
-    display: none;
-}
-
-.slide-menu__opacity {
-    position: fixed;
-    left: 94.54%;
-    right: 0;
-    top: 120px;
-    bottom: 63.82%;
-    order: 999;
-    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); /*F8F8F8*/
-    height: 70px;
-    z-index: 100;
-}
-
-.slide-menu::-webkit-scrollbar {
     display: none;
 }
 
@@ -142,10 +117,11 @@ input, span {
 }
 
 /*//////////////////////START slider/////////////////*/
-.swiper-slide, swiper-slide {
+.swiper-slide {
     position: relative;
     transition-property: transform;
-    display: block
+    display: block;
+    margin-left: 5px;
 }
 
 .swiper-container::-webkit-scrollbar { /*скрыть скролл*/
@@ -156,17 +132,49 @@ input, span {
     overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none; /*Скрывает скролл в Firefox*/
-
 }
 
+/*кастом точек*/
+.swiper-pagination > .swiper-pagination-bullet {
+    opacity: 1;
+    border: white solid 1px;
+    background-color: #DDDDDD;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+/*точки сразу после слайдера*/
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: auto; /*var(--swiper-pagination-bottom,8px);*/
-    /*указать вычисление отступа*/
-    top: 180px; /*var(--swiper-pagination-top,auto);*/
-    left: 10px;
     height: fit-content;
+    margin-top: 10px;
+    position: fixed;
+    top: 140px;/*calc(var(--swiper-navigation-size) + 130px); /*calc(100vw - 100px);*/
+}
+@media screen and (max-width: 350px) {
+    h3 {
+        font-size: 17px; !important;
+    }
 }
 
+/*тень в слайдере (через псевдоэлемент)*/
+.wrapper::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 72px;
+    -webkit-box-shadow: -47px 0 13px -8px #F8F8F8 inset;
+    -moz-box-shadow: -47px 0 13px -8px #F8F8F8 inset;
+    box-shadow: -47px 0 13px -8px #F8F8F8 inset;
+    z-index: 100;
+    pointer-events: none;
+}
 /*//////////////////////END slider/////////////////*/
 
 .content-companies {
@@ -190,7 +198,7 @@ input, span {
     display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1119px) {
+@media screen and (min-width: 768px) {
     /*стили для планшетов*/
     .content-companies, .show-more {
         display: unset;
